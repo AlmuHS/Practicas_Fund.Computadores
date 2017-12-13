@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Practica5\Practica5_simplificada.ncd
+OUTFILE=E:\Practica5\Practica5_simplificada.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=E:\Practica5
+LICENSE=ISE
+USER_INFO=174254652_1777488239_210549491_927

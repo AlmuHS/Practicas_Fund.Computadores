@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.28xd on Mon Jan 12 17:46:26 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+NET "E_BUFGP/IBUFG" BEL "E_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "CLK_50MHZ_BUFGP/IBUFG" BEL "CLK_50MHZ_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+SCHEMATIC END;
+

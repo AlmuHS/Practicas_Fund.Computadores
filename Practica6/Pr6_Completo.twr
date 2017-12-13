@@ -1,0 +1,741 @@
+--------------------------------------------------------------------------------
+Release 14.2 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml Pr6_Completo.twx Pr6_Completo.ncd -o Pr6_Completo.twr
+Pr6_Completo.pcf -ucf restricciones_spartan3E.ucf
+
+Design file:              Pr6_Completo.ncd
+Physical constraint file: Pr6_Completo.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2012-07-09)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "CLK_50MHZ_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 483 paths analyzed, 121 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.160ns.
+--------------------------------------------------------------------------------
+
+Paths for end point AR/CONTADOR_1_19 (SLICE_X33Y68.CIN), 18 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     15.840ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AR/CONTADOR_1_0 (FF)
+  Destination:          AR/CONTADOR_1_19 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.160ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHZ_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_50MHZ_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AR/CONTADOR_1_0 to AR/CONTADOR_1_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y59.XQ      Tcko                  0.591   AR/CONTADOR_1<0>
+                                                       AR/CONTADOR_1_0
+    SLICE_X33Y59.F2      net (fanout=1)        0.461   AR/CONTADOR_1<0>
+    SLICE_X33Y59.COUT    Topcyf                1.162   AR/CONTADOR_1<0>
+                                                       AR/Mcount_CONTADOR_1_lut<0>_INV_0
+                                                       AR/Mcount_CONTADOR_1_cy<0>
+                                                       AR/Mcount_CONTADOR_1_cy<1>
+    SLICE_X33Y60.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<1>
+    SLICE_X33Y60.COUT    Tbyp                  0.118   AR/CONTADOR_1<2>
+                                                       AR/Mcount_CONTADOR_1_cy<2>
+                                                       AR/Mcount_CONTADOR_1_cy<3>
+    SLICE_X33Y61.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<3>
+    SLICE_X33Y61.COUT    Tbyp                  0.118   AR/CONTADOR_1<4>
+                                                       AR/Mcount_CONTADOR_1_cy<4>
+                                                       AR/Mcount_CONTADOR_1_cy<5>
+    SLICE_X33Y62.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<5>
+    SLICE_X33Y62.COUT    Tbyp                  0.118   AR/CONTADOR_1<6>
+                                                       AR/Mcount_CONTADOR_1_cy<6>
+                                                       AR/Mcount_CONTADOR_1_cy<7>
+    SLICE_X33Y63.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<7>
+    SLICE_X33Y63.COUT    Tbyp                  0.118   AR/CONTADOR_1<8>
+                                                       AR/Mcount_CONTADOR_1_cy<8>
+                                                       AR/Mcount_CONTADOR_1_cy<9>
+    SLICE_X33Y64.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<9>
+    SLICE_X33Y64.COUT    Tbyp                  0.118   AR/CONTADOR_1<10>
+                                                       AR/Mcount_CONTADOR_1_cy<10>
+                                                       AR/Mcount_CONTADOR_1_cy<11>
+    SLICE_X33Y65.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<11>
+    SLICE_X33Y65.COUT    Tbyp                  0.118   AR/CONTADOR_1<12>
+                                                       AR/Mcount_CONTADOR_1_cy<12>
+                                                       AR/Mcount_CONTADOR_1_cy<13>
+    SLICE_X33Y66.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<13>
+    SLICE_X33Y66.COUT    Tbyp                  0.118   AR/CONTADOR_1<14>
+                                                       AR/Mcount_CONTADOR_1_cy<14>
+                                                       AR/Mcount_CONTADOR_1_cy<15>
+    SLICE_X33Y67.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<15>
+    SLICE_X33Y67.COUT    Tbyp                  0.118   AR/CONTADOR_1<16>
+                                                       AR/Mcount_CONTADOR_1_cy<16>
+                                                       AR/Mcount_CONTADOR_1_cy<17>
+    SLICE_X33Y68.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<17>
+    SLICE_X33Y68.CLK     Tcinck                1.002   AR/CONTADOR_1<18>
+                                                       AR/Mcount_CONTADOR_1_cy<18>
+                                                       AR/Mcount_CONTADOR_1_xor<19>
+                                                       AR/CONTADOR_1_19
+    -------------------------------------------------  ---------------------------
+    Total                                      4.160ns (3.699ns logic, 0.461ns route)
+                                                       (88.9% logic, 11.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     16.036ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AR/CONTADOR_1_2 (FF)
+  Destination:          AR/CONTADOR_1_19 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.964ns (Levels of Logic = 9)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHZ_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_50MHZ_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AR/CONTADOR_1_2 to AR/CONTADOR_1_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y60.XQ      Tcko                  0.591   AR/CONTADOR_1<2>
+                                                       AR/CONTADOR_1_2
+    SLICE_X33Y60.F3      net (fanout=1)        0.383   AR/CONTADOR_1<2>
+    SLICE_X33Y60.COUT    Topcyf                1.162   AR/CONTADOR_1<2>
+                                                       AR/CONTADOR_1<2>_rt
+                                                       AR/Mcount_CONTADOR_1_cy<2>
+                                                       AR/Mcount_CONTADOR_1_cy<3>
+    SLICE_X33Y61.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<3>
+    SLICE_X33Y61.COUT    Tbyp                  0.118   AR/CONTADOR_1<4>
+                                                       AR/Mcount_CONTADOR_1_cy<4>
+                                                       AR/Mcount_CONTADOR_1_cy<5>
+    SLICE_X33Y62.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<5>
+    SLICE_X33Y62.COUT    Tbyp                  0.118   AR/CONTADOR_1<6>
+                                                       AR/Mcount_CONTADOR_1_cy<6>
+                                                       AR/Mcount_CONTADOR_1_cy<7>
+    SLICE_X33Y63.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<7>
+    SLICE_X33Y63.COUT    Tbyp                  0.118   AR/CONTADOR_1<8>
+                                                       AR/Mcount_CONTADOR_1_cy<8>
+                                                       AR/Mcount_CONTADOR_1_cy<9>
+    SLICE_X33Y64.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<9>
+    SLICE_X33Y64.COUT    Tbyp                  0.118   AR/CONTADOR_1<10>
+                                                       AR/Mcount_CONTADOR_1_cy<10>
+                                                       AR/Mcount_CONTADOR_1_cy<11>
+    SLICE_X33Y65.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<11>
+    SLICE_X33Y65.COUT    Tbyp                  0.118   AR/CONTADOR_1<12>
+                                                       AR/Mcount_CONTADOR_1_cy<12>
+                                                       AR/Mcount_CONTADOR_1_cy<13>
+    SLICE_X33Y66.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<13>
+    SLICE_X33Y66.COUT    Tbyp                  0.118   AR/CONTADOR_1<14>
+                                                       AR/Mcount_CONTADOR_1_cy<14>
+                                                       AR/Mcount_CONTADOR_1_cy<15>
+    SLICE_X33Y67.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<15>
+    SLICE_X33Y67.COUT    Tbyp                  0.118   AR/CONTADOR_1<16>
+                                                       AR/Mcount_CONTADOR_1_cy<16>
+                                                       AR/Mcount_CONTADOR_1_cy<17>
+    SLICE_X33Y68.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<17>
+    SLICE_X33Y68.CLK     Tcinck                1.002   AR/CONTADOR_1<18>
+                                                       AR/Mcount_CONTADOR_1_cy<18>
+                                                       AR/Mcount_CONTADOR_1_xor<19>
+                                                       AR/CONTADOR_1_19
+    -------------------------------------------------  ---------------------------
+    Total                                      3.964ns (3.581ns logic, 0.383ns route)
+                                                       (90.3% logic, 9.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     16.051ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AR/CONTADOR_1_3 (FF)
+  Destination:          AR/CONTADOR_1_19 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.949ns (Levels of Logic = 9)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHZ_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_50MHZ_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AR/CONTADOR_1_3 to AR/CONTADOR_1_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y60.YQ      Tcko                  0.587   AR/CONTADOR_1<2>
+                                                       AR/CONTADOR_1_3
+    SLICE_X33Y60.G1      net (fanout=1)        0.533   AR/CONTADOR_1<3>
+    SLICE_X33Y60.COUT    Topcyg                1.001   AR/CONTADOR_1<2>
+                                                       AR/CONTADOR_1<3>_rt
+                                                       AR/Mcount_CONTADOR_1_cy<3>
+    SLICE_X33Y61.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<3>
+    SLICE_X33Y61.COUT    Tbyp                  0.118   AR/CONTADOR_1<4>
+                                                       AR/Mcount_CONTADOR_1_cy<4>
+                                                       AR/Mcount_CONTADOR_1_cy<5>
+    SLICE_X33Y62.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<5>
+    SLICE_X33Y62.COUT    Tbyp                  0.118   AR/CONTADOR_1<6>
+                                                       AR/Mcount_CONTADOR_1_cy<6>
+                                                       AR/Mcount_CONTADOR_1_cy<7>
+    SLICE_X33Y63.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<7>
+    SLICE_X33Y63.COUT    Tbyp                  0.118   AR/CONTADOR_1<8>
+                                                       AR/Mcount_CONTADOR_1_cy<8>
+                                                       AR/Mcount_CONTADOR_1_cy<9>
+    SLICE_X33Y64.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<9>
+    SLICE_X33Y64.COUT    Tbyp                  0.118   AR/CONTADOR_1<10>
+                                                       AR/Mcount_CONTADOR_1_cy<10>
+                                                       AR/Mcount_CONTADOR_1_cy<11>
+    SLICE_X33Y65.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<11>
+    SLICE_X33Y65.COUT    Tbyp                  0.118   AR/CONTADOR_1<12>
+                                                       AR/Mcount_CONTADOR_1_cy<12>
+                                                       AR/Mcount_CONTADOR_1_cy<13>
+    SLICE_X33Y66.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<13>
+    SLICE_X33Y66.COUT    Tbyp                  0.118   AR/CONTADOR_1<14>
+                                                       AR/Mcount_CONTADOR_1_cy<14>
+                                                       AR/Mcount_CONTADOR_1_cy<15>
+    SLICE_X33Y67.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<15>
+    SLICE_X33Y67.COUT    Tbyp                  0.118   AR/CONTADOR_1<16>
+                                                       AR/Mcount_CONTADOR_1_cy<16>
+                                                       AR/Mcount_CONTADOR_1_cy<17>
+    SLICE_X33Y68.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<17>
+    SLICE_X33Y68.CLK     Tcinck                1.002   AR/CONTADOR_1<18>
+                                                       AR/Mcount_CONTADOR_1_cy<18>
+                                                       AR/Mcount_CONTADOR_1_xor<19>
+                                                       AR/CONTADOR_1_19
+    -------------------------------------------------  ---------------------------
+    Total                                      3.949ns (3.416ns logic, 0.533ns route)
+                                                       (86.5% logic, 13.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point AR/CONTADOR_2_19 (SLICE_X29Y68.CIN), 18 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     15.922ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AR/CONTADOR_2_2 (FF)
+  Destination:          AR/CONTADOR_2_19 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.078ns (Levels of Logic = 9)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHZ_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_50MHZ_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AR/CONTADOR_2_2 to AR/CONTADOR_2_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y60.XQ      Tcko                  0.591   AR/CONTADOR_2<2>
+                                                       AR/CONTADOR_2_2
+    SLICE_X29Y60.F1      net (fanout=1)        0.497   AR/CONTADOR_2<2>
+    SLICE_X29Y60.COUT    Topcyf                1.162   AR/CONTADOR_2<2>
+                                                       AR/CONTADOR_2<2>_rt
+                                                       AR/Mcount_CONTADOR_2_cy<2>
+                                                       AR/Mcount_CONTADOR_2_cy<3>
+    SLICE_X29Y61.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<3>
+    SLICE_X29Y61.COUT    Tbyp                  0.118   AR/CONTADOR_2<4>
+                                                       AR/Mcount_CONTADOR_2_cy<4>
+                                                       AR/Mcount_CONTADOR_2_cy<5>
+    SLICE_X29Y62.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<5>
+    SLICE_X29Y62.COUT    Tbyp                  0.118   AR/CONTADOR_2<6>
+                                                       AR/Mcount_CONTADOR_2_cy<6>
+                                                       AR/Mcount_CONTADOR_2_cy<7>
+    SLICE_X29Y63.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<7>
+    SLICE_X29Y63.COUT    Tbyp                  0.118   AR/CONTADOR_2<8>
+                                                       AR/Mcount_CONTADOR_2_cy<8>
+                                                       AR/Mcount_CONTADOR_2_cy<9>
+    SLICE_X29Y64.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<9>
+    SLICE_X29Y64.COUT    Tbyp                  0.118   AR/CONTADOR_2<10>
+                                                       AR/Mcount_CONTADOR_2_cy<10>
+                                                       AR/Mcount_CONTADOR_2_cy<11>
+    SLICE_X29Y65.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<11>
+    SLICE_X29Y65.COUT    Tbyp                  0.118   AR/CONTADOR_2<12>
+                                                       AR/Mcount_CONTADOR_2_cy<12>
+                                                       AR/Mcount_CONTADOR_2_cy<13>
+    SLICE_X29Y66.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<13>
+    SLICE_X29Y66.COUT    Tbyp                  0.118   AR/CONTADOR_2<14>
+                                                       AR/Mcount_CONTADOR_2_cy<14>
+                                                       AR/Mcount_CONTADOR_2_cy<15>
+    SLICE_X29Y67.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<15>
+    SLICE_X29Y67.COUT    Tbyp                  0.118   AR/CONTADOR_2<16>
+                                                       AR/Mcount_CONTADOR_2_cy<16>
+                                                       AR/Mcount_CONTADOR_2_cy<17>
+    SLICE_X29Y68.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<17>
+    SLICE_X29Y68.CLK     Tcinck                1.002   AR/CONTADOR_2<18>
+                                                       AR/Mcount_CONTADOR_2_cy<18>
+                                                       AR/Mcount_CONTADOR_2_xor<19>
+                                                       AR/CONTADOR_2_19
+    -------------------------------------------------  ---------------------------
+    Total                                      4.078ns (3.581ns logic, 0.497ns route)
+                                                       (87.8% logic, 12.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     15.933ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AR/CONTADOR_2_1 (FF)
+  Destination:          AR/CONTADOR_2_19 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.067ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHZ_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_50MHZ_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AR/CONTADOR_2_1 to AR/CONTADOR_2_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y59.YQ      Tcko                  0.587   AR/CONTADOR_2<0>
+                                                       AR/CONTADOR_2_1
+    SLICE_X29Y59.G1      net (fanout=1)        0.533   AR/CONTADOR_2<1>
+    SLICE_X29Y59.COUT    Topcyg                1.001   AR/CONTADOR_2<0>
+                                                       AR/CONTADOR_2<1>_rt
+                                                       AR/Mcount_CONTADOR_2_cy<1>
+    SLICE_X29Y60.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<1>
+    SLICE_X29Y60.COUT    Tbyp                  0.118   AR/CONTADOR_2<2>
+                                                       AR/Mcount_CONTADOR_2_cy<2>
+                                                       AR/Mcount_CONTADOR_2_cy<3>
+    SLICE_X29Y61.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<3>
+    SLICE_X29Y61.COUT    Tbyp                  0.118   AR/CONTADOR_2<4>
+                                                       AR/Mcount_CONTADOR_2_cy<4>
+                                                       AR/Mcount_CONTADOR_2_cy<5>
+    SLICE_X29Y62.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<5>
+    SLICE_X29Y62.COUT    Tbyp                  0.118   AR/CONTADOR_2<6>
+                                                       AR/Mcount_CONTADOR_2_cy<6>
+                                                       AR/Mcount_CONTADOR_2_cy<7>
+    SLICE_X29Y63.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<7>
+    SLICE_X29Y63.COUT    Tbyp                  0.118   AR/CONTADOR_2<8>
+                                                       AR/Mcount_CONTADOR_2_cy<8>
+                                                       AR/Mcount_CONTADOR_2_cy<9>
+    SLICE_X29Y64.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<9>
+    SLICE_X29Y64.COUT    Tbyp                  0.118   AR/CONTADOR_2<10>
+                                                       AR/Mcount_CONTADOR_2_cy<10>
+                                                       AR/Mcount_CONTADOR_2_cy<11>
+    SLICE_X29Y65.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<11>
+    SLICE_X29Y65.COUT    Tbyp                  0.118   AR/CONTADOR_2<12>
+                                                       AR/Mcount_CONTADOR_2_cy<12>
+                                                       AR/Mcount_CONTADOR_2_cy<13>
+    SLICE_X29Y66.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<13>
+    SLICE_X29Y66.COUT    Tbyp                  0.118   AR/CONTADOR_2<14>
+                                                       AR/Mcount_CONTADOR_2_cy<14>
+                                                       AR/Mcount_CONTADOR_2_cy<15>
+    SLICE_X29Y67.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<15>
+    SLICE_X29Y67.COUT    Tbyp                  0.118   AR/CONTADOR_2<16>
+                                                       AR/Mcount_CONTADOR_2_cy<16>
+                                                       AR/Mcount_CONTADOR_2_cy<17>
+    SLICE_X29Y68.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<17>
+    SLICE_X29Y68.CLK     Tcinck                1.002   AR/CONTADOR_2<18>
+                                                       AR/Mcount_CONTADOR_2_cy<18>
+                                                       AR/Mcount_CONTADOR_2_xor<19>
+                                                       AR/CONTADOR_2_19
+    -------------------------------------------------  ---------------------------
+    Total                                      4.067ns (3.534ns logic, 0.533ns route)
+                                                       (86.9% logic, 13.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     15.937ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AR/CONTADOR_2_0 (FF)
+  Destination:          AR/CONTADOR_2_19 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.063ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHZ_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_50MHZ_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AR/CONTADOR_2_0 to AR/CONTADOR_2_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y59.XQ      Tcko                  0.591   AR/CONTADOR_2<0>
+                                                       AR/CONTADOR_2_0
+    SLICE_X29Y59.F4      net (fanout=1)        0.364   AR/CONTADOR_2<0>
+    SLICE_X29Y59.COUT    Topcyf                1.162   AR/CONTADOR_2<0>
+                                                       AR/Mcount_CONTADOR_2_lut<0>_INV_0
+                                                       AR/Mcount_CONTADOR_2_cy<0>
+                                                       AR/Mcount_CONTADOR_2_cy<1>
+    SLICE_X29Y60.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<1>
+    SLICE_X29Y60.COUT    Tbyp                  0.118   AR/CONTADOR_2<2>
+                                                       AR/Mcount_CONTADOR_2_cy<2>
+                                                       AR/Mcount_CONTADOR_2_cy<3>
+    SLICE_X29Y61.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<3>
+    SLICE_X29Y61.COUT    Tbyp                  0.118   AR/CONTADOR_2<4>
+                                                       AR/Mcount_CONTADOR_2_cy<4>
+                                                       AR/Mcount_CONTADOR_2_cy<5>
+    SLICE_X29Y62.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<5>
+    SLICE_X29Y62.COUT    Tbyp                  0.118   AR/CONTADOR_2<6>
+                                                       AR/Mcount_CONTADOR_2_cy<6>
+                                                       AR/Mcount_CONTADOR_2_cy<7>
+    SLICE_X29Y63.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<7>
+    SLICE_X29Y63.COUT    Tbyp                  0.118   AR/CONTADOR_2<8>
+                                                       AR/Mcount_CONTADOR_2_cy<8>
+                                                       AR/Mcount_CONTADOR_2_cy<9>
+    SLICE_X29Y64.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<9>
+    SLICE_X29Y64.COUT    Tbyp                  0.118   AR/CONTADOR_2<10>
+                                                       AR/Mcount_CONTADOR_2_cy<10>
+                                                       AR/Mcount_CONTADOR_2_cy<11>
+    SLICE_X29Y65.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<11>
+    SLICE_X29Y65.COUT    Tbyp                  0.118   AR/CONTADOR_2<12>
+                                                       AR/Mcount_CONTADOR_2_cy<12>
+                                                       AR/Mcount_CONTADOR_2_cy<13>
+    SLICE_X29Y66.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<13>
+    SLICE_X29Y66.COUT    Tbyp                  0.118   AR/CONTADOR_2<14>
+                                                       AR/Mcount_CONTADOR_2_cy<14>
+                                                       AR/Mcount_CONTADOR_2_cy<15>
+    SLICE_X29Y67.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<15>
+    SLICE_X29Y67.COUT    Tbyp                  0.118   AR/CONTADOR_2<16>
+                                                       AR/Mcount_CONTADOR_2_cy<16>
+                                                       AR/Mcount_CONTADOR_2_cy<17>
+    SLICE_X29Y68.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_2_cy<17>
+    SLICE_X29Y68.CLK     Tcinck                1.002   AR/CONTADOR_2<18>
+                                                       AR/Mcount_CONTADOR_2_cy<18>
+                                                       AR/Mcount_CONTADOR_2_xor<19>
+                                                       AR/CONTADOR_2_19
+    -------------------------------------------------  ---------------------------
+    Total                                      4.063ns (3.699ns logic, 0.364ns route)
+                                                       (91.0% logic, 9.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point AR/CONTADOR_1_17 (SLICE_X33Y67.CIN), 16 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     15.958ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AR/CONTADOR_1_0 (FF)
+  Destination:          AR/CONTADOR_1_17 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.042ns (Levels of Logic = 9)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHZ_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_50MHZ_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AR/CONTADOR_1_0 to AR/CONTADOR_1_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y59.XQ      Tcko                  0.591   AR/CONTADOR_1<0>
+                                                       AR/CONTADOR_1_0
+    SLICE_X33Y59.F2      net (fanout=1)        0.461   AR/CONTADOR_1<0>
+    SLICE_X33Y59.COUT    Topcyf                1.162   AR/CONTADOR_1<0>
+                                                       AR/Mcount_CONTADOR_1_lut<0>_INV_0
+                                                       AR/Mcount_CONTADOR_1_cy<0>
+                                                       AR/Mcount_CONTADOR_1_cy<1>
+    SLICE_X33Y60.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<1>
+    SLICE_X33Y60.COUT    Tbyp                  0.118   AR/CONTADOR_1<2>
+                                                       AR/Mcount_CONTADOR_1_cy<2>
+                                                       AR/Mcount_CONTADOR_1_cy<3>
+    SLICE_X33Y61.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<3>
+    SLICE_X33Y61.COUT    Tbyp                  0.118   AR/CONTADOR_1<4>
+                                                       AR/Mcount_CONTADOR_1_cy<4>
+                                                       AR/Mcount_CONTADOR_1_cy<5>
+    SLICE_X33Y62.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<5>
+    SLICE_X33Y62.COUT    Tbyp                  0.118   AR/CONTADOR_1<6>
+                                                       AR/Mcount_CONTADOR_1_cy<6>
+                                                       AR/Mcount_CONTADOR_1_cy<7>
+    SLICE_X33Y63.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<7>
+    SLICE_X33Y63.COUT    Tbyp                  0.118   AR/CONTADOR_1<8>
+                                                       AR/Mcount_CONTADOR_1_cy<8>
+                                                       AR/Mcount_CONTADOR_1_cy<9>
+    SLICE_X33Y64.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<9>
+    SLICE_X33Y64.COUT    Tbyp                  0.118   AR/CONTADOR_1<10>
+                                                       AR/Mcount_CONTADOR_1_cy<10>
+                                                       AR/Mcount_CONTADOR_1_cy<11>
+    SLICE_X33Y65.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<11>
+    SLICE_X33Y65.COUT    Tbyp                  0.118   AR/CONTADOR_1<12>
+                                                       AR/Mcount_CONTADOR_1_cy<12>
+                                                       AR/Mcount_CONTADOR_1_cy<13>
+    SLICE_X33Y66.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<13>
+    SLICE_X33Y66.COUT    Tbyp                  0.118   AR/CONTADOR_1<14>
+                                                       AR/Mcount_CONTADOR_1_cy<14>
+                                                       AR/Mcount_CONTADOR_1_cy<15>
+    SLICE_X33Y67.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<15>
+    SLICE_X33Y67.CLK     Tcinck                1.002   AR/CONTADOR_1<16>
+                                                       AR/Mcount_CONTADOR_1_cy<16>
+                                                       AR/Mcount_CONTADOR_1_xor<17>
+                                                       AR/CONTADOR_1_17
+    -------------------------------------------------  ---------------------------
+    Total                                      4.042ns (3.581ns logic, 0.461ns route)
+                                                       (88.6% logic, 11.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     16.154ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AR/CONTADOR_1_2 (FF)
+  Destination:          AR/CONTADOR_1_17 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.846ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHZ_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_50MHZ_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AR/CONTADOR_1_2 to AR/CONTADOR_1_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y60.XQ      Tcko                  0.591   AR/CONTADOR_1<2>
+                                                       AR/CONTADOR_1_2
+    SLICE_X33Y60.F3      net (fanout=1)        0.383   AR/CONTADOR_1<2>
+    SLICE_X33Y60.COUT    Topcyf                1.162   AR/CONTADOR_1<2>
+                                                       AR/CONTADOR_1<2>_rt
+                                                       AR/Mcount_CONTADOR_1_cy<2>
+                                                       AR/Mcount_CONTADOR_1_cy<3>
+    SLICE_X33Y61.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<3>
+    SLICE_X33Y61.COUT    Tbyp                  0.118   AR/CONTADOR_1<4>
+                                                       AR/Mcount_CONTADOR_1_cy<4>
+                                                       AR/Mcount_CONTADOR_1_cy<5>
+    SLICE_X33Y62.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<5>
+    SLICE_X33Y62.COUT    Tbyp                  0.118   AR/CONTADOR_1<6>
+                                                       AR/Mcount_CONTADOR_1_cy<6>
+                                                       AR/Mcount_CONTADOR_1_cy<7>
+    SLICE_X33Y63.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<7>
+    SLICE_X33Y63.COUT    Tbyp                  0.118   AR/CONTADOR_1<8>
+                                                       AR/Mcount_CONTADOR_1_cy<8>
+                                                       AR/Mcount_CONTADOR_1_cy<9>
+    SLICE_X33Y64.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<9>
+    SLICE_X33Y64.COUT    Tbyp                  0.118   AR/CONTADOR_1<10>
+                                                       AR/Mcount_CONTADOR_1_cy<10>
+                                                       AR/Mcount_CONTADOR_1_cy<11>
+    SLICE_X33Y65.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<11>
+    SLICE_X33Y65.COUT    Tbyp                  0.118   AR/CONTADOR_1<12>
+                                                       AR/Mcount_CONTADOR_1_cy<12>
+                                                       AR/Mcount_CONTADOR_1_cy<13>
+    SLICE_X33Y66.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<13>
+    SLICE_X33Y66.COUT    Tbyp                  0.118   AR/CONTADOR_1<14>
+                                                       AR/Mcount_CONTADOR_1_cy<14>
+                                                       AR/Mcount_CONTADOR_1_cy<15>
+    SLICE_X33Y67.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<15>
+    SLICE_X33Y67.CLK     Tcinck                1.002   AR/CONTADOR_1<16>
+                                                       AR/Mcount_CONTADOR_1_cy<16>
+                                                       AR/Mcount_CONTADOR_1_xor<17>
+                                                       AR/CONTADOR_1_17
+    -------------------------------------------------  ---------------------------
+    Total                                      3.846ns (3.463ns logic, 0.383ns route)
+                                                       (90.0% logic, 10.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     16.169ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               AR/CONTADOR_1_3 (FF)
+  Destination:          AR/CONTADOR_1_17 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.831ns (Levels of Logic = 8)
+  Clock Path Skew:      0.000ns
+  Source Clock:         CLK_50MHZ_BUFGP rising at 0.000ns
+  Destination Clock:    CLK_50MHZ_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: AR/CONTADOR_1_3 to AR/CONTADOR_1_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y60.YQ      Tcko                  0.587   AR/CONTADOR_1<2>
+                                                       AR/CONTADOR_1_3
+    SLICE_X33Y60.G1      net (fanout=1)        0.533   AR/CONTADOR_1<3>
+    SLICE_X33Y60.COUT    Topcyg                1.001   AR/CONTADOR_1<2>
+                                                       AR/CONTADOR_1<3>_rt
+                                                       AR/Mcount_CONTADOR_1_cy<3>
+    SLICE_X33Y61.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<3>
+    SLICE_X33Y61.COUT    Tbyp                  0.118   AR/CONTADOR_1<4>
+                                                       AR/Mcount_CONTADOR_1_cy<4>
+                                                       AR/Mcount_CONTADOR_1_cy<5>
+    SLICE_X33Y62.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<5>
+    SLICE_X33Y62.COUT    Tbyp                  0.118   AR/CONTADOR_1<6>
+                                                       AR/Mcount_CONTADOR_1_cy<6>
+                                                       AR/Mcount_CONTADOR_1_cy<7>
+    SLICE_X33Y63.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<7>
+    SLICE_X33Y63.COUT    Tbyp                  0.118   AR/CONTADOR_1<8>
+                                                       AR/Mcount_CONTADOR_1_cy<8>
+                                                       AR/Mcount_CONTADOR_1_cy<9>
+    SLICE_X33Y64.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<9>
+    SLICE_X33Y64.COUT    Tbyp                  0.118   AR/CONTADOR_1<10>
+                                                       AR/Mcount_CONTADOR_1_cy<10>
+                                                       AR/Mcount_CONTADOR_1_cy<11>
+    SLICE_X33Y65.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<11>
+    SLICE_X33Y65.COUT    Tbyp                  0.118   AR/CONTADOR_1<12>
+                                                       AR/Mcount_CONTADOR_1_cy<12>
+                                                       AR/Mcount_CONTADOR_1_cy<13>
+    SLICE_X33Y66.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<13>
+    SLICE_X33Y66.COUT    Tbyp                  0.118   AR/CONTADOR_1<14>
+                                                       AR/Mcount_CONTADOR_1_cy<14>
+                                                       AR/Mcount_CONTADOR_1_cy<15>
+    SLICE_X33Y67.CIN     net (fanout=1)        0.000   AR/Mcount_CONTADOR_1_cy<15>
+    SLICE_X33Y67.CLK     Tcinck                1.002   AR/CONTADOR_1<16>
+                                                       AR/Mcount_CONTADOR_1_cy<16>
+                                                       AR/Mcount_CONTADOR_1_xor<17>
+                                                       AR/CONTADOR_1_17
+    -------------------------------------------------  ---------------------------
+    Total                                      3.831ns (3.298ns logic, 0.533ns route)
+                                                       (86.1% logic, 13.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "CLK_50MHZ_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+--------------------------------------------------------------------------------
+
+Paths for end point AR/CONTADOR_1_14 (SLICE_X33Y66.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.175ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               AR/CONTADOR_1_20 (FF)
+  Destination:          AR/CONTADOR_1_14 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.174ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.001ns (0.005 - 0.006)
+  Source Clock:         CLK_50MHZ_BUFGP rising at 20.000ns
+  Destination Clock:    CLK_50MHZ_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: AR/CONTADOR_1_20 to AR/CONTADOR_1_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y69.XQ      Tcko                  0.473   AR/CONTADOR_1<20>
+                                                       AR/CONTADOR_1_20
+    SLICE_X33Y66.CE      net (fanout=24)       0.632   AR/CONTADOR_1<20>
+    SLICE_X33Y66.CLK     Tckce       (-Th)    -0.069   AR/CONTADOR_1<14>
+                                                       AR/CONTADOR_1_14
+    -------------------------------------------------  ---------------------------
+    Total                                      1.174ns (0.542ns logic, 0.632ns route)
+                                                       (46.2% logic, 53.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point AR/CONTADOR_1_15 (SLICE_X33Y66.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.175ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               AR/CONTADOR_1_20 (FF)
+  Destination:          AR/CONTADOR_1_15 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.174ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.001ns (0.005 - 0.006)
+  Source Clock:         CLK_50MHZ_BUFGP rising at 20.000ns
+  Destination Clock:    CLK_50MHZ_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: AR/CONTADOR_1_20 to AR/CONTADOR_1_15
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y69.XQ      Tcko                  0.473   AR/CONTADOR_1<20>
+                                                       AR/CONTADOR_1_20
+    SLICE_X33Y66.CE      net (fanout=24)       0.632   AR/CONTADOR_1<20>
+    SLICE_X33Y66.CLK     Tckce       (-Th)    -0.069   AR/CONTADOR_1<14>
+                                                       AR/CONTADOR_1_15
+    -------------------------------------------------  ---------------------------
+    Total                                      1.174ns (0.542ns logic, 0.632ns route)
+                                                       (46.2% logic, 53.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point AR/CONTADOR_1_16 (SLICE_X33Y67.CE), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.175ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               AR/CONTADOR_1_20 (FF)
+  Destination:          AR/CONTADOR_1_16 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.174ns (Levels of Logic = 0)
+  Clock Path Skew:      -0.001ns (0.005 - 0.006)
+  Source Clock:         CLK_50MHZ_BUFGP rising at 20.000ns
+  Destination Clock:    CLK_50MHZ_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: AR/CONTADOR_1_20 to AR/CONTADOR_1_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y69.XQ      Tcko                  0.473   AR/CONTADOR_1<20>
+                                                       AR/CONTADOR_1_20
+    SLICE_X33Y67.CE      net (fanout=24)       0.632   AR/CONTADOR_1<20>
+    SLICE_X33Y67.CLK     Tckce       (-Th)    -0.069   AR/CONTADOR_1<16>
+                                                       AR/CONTADOR_1_16
+    -------------------------------------------------  ---------------------------
+    Total                                      1.174ns (0.542ns logic, 0.632ns route)
+                                                       (46.2% logic, 53.8% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "CLK_50MHZ_BUFGP/IBUFG" PERIOD = 20 ns HIGH 40%;
+--------------------------------------------------------------------------------
+Slack: 18.005ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 8.000ns
+  High pulse limit: 0.798ns (Tch)
+  Physical resource: AR/CONTADOR_2<0>/CLK
+  Logical resource: AR/CONTADOR_2_0/CK
+  Location pin: SLICE_X29Y59.CLK
+  Clock network: CLK_50MHZ_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.005ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 8.000ns
+  High pulse limit: 0.798ns (Tch)
+  Physical resource: AR/CONTADOR_2<0>/CLK
+  Logical resource: AR/CONTADOR_2_1/CK
+  Location pin: SLICE_X29Y59.CLK
+  Clock network: CLK_50MHZ_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.005ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 8.000ns
+  High pulse limit: 0.798ns (Tch)
+  Physical resource: AR/CONTADOR_2<2>/CLK
+  Logical resource: AR/CONTADOR_2_2/CK
+  Location pin: SLICE_X29Y60.CLK
+  Clock network: CLK_50MHZ_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock CLK_50MHZ
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_50MHZ      |    4.160|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 483 paths, 0 nets, and 96 connections
+
+Design statistics:
+   Minimum period:   4.160ns{1}   (Maximum frequency: 240.385MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Jan 12 18:12:11 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 100 MB
+
+
+

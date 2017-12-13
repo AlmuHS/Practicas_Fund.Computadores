@@ -1,0 +1,4 @@
+vhdl work "Biestable_T.vhd"
+vhdl work "Practica6.vhd"
+vhdl work "Antirebote.vhd"
+vhdl work "Pr6_Completo.vhd"

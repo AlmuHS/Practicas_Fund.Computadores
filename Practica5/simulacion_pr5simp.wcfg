@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/almu/Practica5/Test_pr5simp_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="test_pr5simp" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/test_pr5simp/x" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">x</obj_property>
+      <obj_property name="ObjectShortName">x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pr5simp/y" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">y</obj_property>
+      <obj_property name="ObjectShortName">y</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pr5simp/z" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">z</obj_property>
+      <obj_property name="ObjectShortName">z</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pr5simp/w" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">w</obj_property>
+      <obj_property name="ObjectShortName">w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pr5simp/l" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">l</obj_property>
+      <obj_property name="ObjectShortName">l</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pr5simp/a" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">a</obj_property>
+      <obj_property name="ObjectShortName">a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pr5simp/valor" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">valor[3:0]</obj_property>
+      <obj_property name="ObjectShortName">valor[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_pr5simp/valor_int" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">valor_int</obj_property>
+      <obj_property name="ObjectShortName">valor_int</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,42 @@
+xst -intstyle ise -ifn "E:/Practica6/Pr6_Completo.xst" -ofn "E:/Practica6/Pr6_Completo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_spartan3E.ucf -p xc3s500e-fg320-4 Pr6_Completo.ngc Pr6_Completo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Pr6_Completo_map.ncd Pr6_Completo.ngd Pr6_Completo.pcf 
+par -w -intstyle ise -ol high -t 1 Pr6_Completo_map.ncd Pr6_Completo.ncd Pr6_Completo.pcf 
+xst -intstyle ise -ifn "E:/Practica6/Pr6_Completo.xst" -ofn "E:/Practica6/Pr6_Completo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_spartan3E.ucf -p xc3s500e-fg320-4 Pr6_Completo.ngc Pr6_Completo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Pr6_Completo_map.ncd Pr6_Completo.ngd Pr6_Completo.pcf 
+par -w -intstyle ise -ol high -t 1 Pr6_Completo_map.ncd Pr6_Completo.ncd Pr6_Completo.pcf 
+par -w -intstyle ise -ol high -t 1 Pr6_Completo_map.ncd Pr6_Completo.ncd Pr6_Completo.pcf 
+xst -intstyle ise -ifn "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Pr6_Completo.xst" -ofn "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Pr6_Completo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_spartan3E.ucf -p xc3s500e-fg320-4 "Pr6_Completo.ngc" Pr6_Completo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Pr6_Completo_map.ncd Pr6_Completo.ngd Pr6_Completo.pcf 
+par -w -intstyle ise -ol high -t 1 Pr6_Completo_map.ncd Pr6_Completo.ncd Pr6_Completo.pcf 
+ibiswriter -intstyle ise -truncate 20 Pr6_Completo.ncd Pr6_Completo.ibs 
+par -w -intstyle ise -ol high -t 1 Pr6_Completo_map.ncd Pr6_Completo.ncd Pr6_Completo.pcf 
+xst -intstyle ise -ifn "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Pr6_Completo.xst" -ofn "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Pr6_Completo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_spartan3E.ucf -p xc3s500e-fg320-4 "Pr6_Completo.ngc" Pr6_Completo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Pr6_Completo_map.ncd Pr6_Completo.ngd Pr6_Completo.pcf 
+par -w -intstyle ise -ol high -t 1 Pr6_Completo_map.ncd Pr6_Completo.ncd Pr6_Completo.pcf 
+xst -intstyle ise -ifn "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Pr6_Completo.xst" -ofn "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Pr6_Completo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_spartan3E.ucf -p xc3s500e-fg320-4 "Pr6_Completo.ngc" Pr6_Completo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Pr6_Completo_map.ncd Pr6_Completo.ngd Pr6_Completo.pcf 
+par -w -intstyle ise -ol high -t 1 Pr6_Completo_map.ncd Pr6_Completo.ncd Pr6_Completo.pcf 
+xst -intstyle ise -ifn "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Pr6_Completo.xst" -ofn "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Pr6_Completo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Pr6_Completo.ngc" Pr6_Completo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Pr6_Completo_map.ncd Pr6_Completo.ngd Pr6_Completo.pcf 
+par -w -intstyle ise -ol high -t 1 Pr6_Completo_map.ncd Pr6_Completo.ncd Pr6_Completo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Pr6_Completo.twx Pr6_Completo.ncd -o Pr6_Completo.twr Pr6_Completo.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_spartan3E.ucf -p xc3s500e-fg320-4 "Pr6_Completo.ngc" Pr6_Completo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Pr6_Completo_map.ncd Pr6_Completo.ngd Pr6_Completo.pcf 
+par -w -intstyle ise -ol high -t 1 Pr6_Completo_map.ncd Pr6_Completo.ncd Pr6_Completo.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_spartan3E.ucf -p xc3s500e-fg320-4 "Pr6_Completo.ngc" Pr6_Completo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Pr6_Completo_map.ncd Pr6_Completo.ngd Pr6_Completo.pcf 
+par -w -intstyle ise -ol high -t 1 Pr6_Completo_map.ncd Pr6_Completo.ncd Pr6_Completo.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_spartan3E.ucf -p xc3s500e-fg320-4 "Pr6_Completo.ngc" Pr6_Completo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Pr6_Completo_map.ncd Pr6_Completo.ngd Pr6_Completo.pcf 
+par -w -intstyle ise -ol high -t 1 Pr6_Completo_map.ncd Pr6_Completo.ncd Pr6_Completo.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc restricciones_spartan3E.ucf -p xc3s500e-fg320-4 "Pr6_Completo.ngc" Pr6_Completo.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Pr6_Completo_map.ncd Pr6_Completo.ngd Pr6_Completo.pcf 
+par -w -intstyle ise -ol high -t 1 Pr6_Completo_map.ncd Pr6_Completo.ncd Pr6_Completo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Pr6_Completo.twx Pr6_Completo.ncd -o Pr6_Completo.twr Pr6_Completo.pcf -ucf restricciones_spartan3E.ucf 
+bitgen -intstyle ise -f Pr6_Completo.ut Pr6_Completo.ncd 

@@ -1,0 +1,29 @@
+Running: C:\Xilinx\14.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Documents and Settings/BASICA1/Escritorio/Practica6/Test_Pr6_isim_beh.exe -prj C:/Documents and Settings/BASICA1/Escritorio/Practica6/Test_Pr6_beh.prj work.Test_Pr6 
+ISim P.28xd (signature 0x1048c146)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Biestable_T.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Practica6.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Antirebote.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Pr6_Completo.vhd" into library work
+Parsing VHDL file "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Test_Pr6.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 66248 KB
+Fuse CPU Usage: 296 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture a_antirrebotes of entity ANTIRREBOTES [\ANTIRREBOTES('0')\]
+Compiling architecture behavioral of entity Biestable_T [biestable_t_default]
+Compiling architecture behavioral of entity Practica6 [practica6_default]
+Compiling architecture behavioral of entity Pr6_Completo [pr6_completo_default]
+Compiling architecture behavior of entity test_pr6
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 13 VHDL Units
+Built simulation executable C:/Documents and Settings/BASICA1/Escritorio/Practica6/Test_Pr6_isim_beh.exe
+Fuse Memory Usage: 81164 KB
+Fuse CPU Usage: 499 ms

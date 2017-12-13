@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Mon Dec 15 18:19:40 2014
+
+drc -z Practica5_simplificada.ncd Practica5_simplificada.pcf
+
+DRC detected 0 errors and 0 warnings.

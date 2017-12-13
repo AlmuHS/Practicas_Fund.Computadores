@@ -1,0 +1,13 @@
+V3 8
+FL /home/almu/Practica5/Practica5.vhd 2014/12/15.11:21:16 P.28xd
+FL /home/almu/Practica5/Practica5_simplificada.vhd 2014/12/15.11:22:35 P.28xd
+FL E:/Practica5/Practica5.vhd 2014/12/15.11:21:16 P.28xd
+EN work/Practica5 1418661837 FL E:/Practica5/Practica5.vhd PB ieee/std_logic_1164 1381692176 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Practica5/Behavioral 1418661838 \
+      FL E:/Practica5/Practica5.vhd EN work/Practica5 1418661837
+FL E:/Practica5/Practica5_simplificada.vhd 2014/12/15.11:22:34 P.28xd
+EN work/Practica5_simplificada 1418662674 \
+      FL E:/Practica5/Practica5_simplificada.vhd PB ieee/std_logic_1164 1381692176
+AR work/Practica5_simplificada/Behavioral 1418662675 \
+      FL E:/Practica5/Practica5_simplificada.vhd EN work/Practica5_simplificada 1418662674

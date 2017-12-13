@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/media/almu/D0A6-2E60/Practica5/Test_Pr5_isim_beh.exe" -prj "/media/almu/D0A6-2E60/Practica5/Test_Pr5_beh.prj" "work.Test_Pr5" 

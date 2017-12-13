@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/BASICA1/Escritorio/Practica6/ANTIRREBOTES.xst" -ofn "C:/Documents and Settings/BASICA1/Escritorio/Practica6/ANTIRREBOTES.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "ANTIRREBOTES.ngc" ANTIRREBOTES.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o ANTIRREBOTES_map.ncd ANTIRREBOTES.ngd ANTIRREBOTES.pcf 
+par -w -intstyle ise -ol high -t 1 ANTIRREBOTES_map.ncd ANTIRREBOTES.ncd ANTIRREBOTES.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml ANTIRREBOTES.twx ANTIRREBOTES.ncd -o ANTIRREBOTES.twr ANTIRREBOTES.pcf 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Documents and Settings\BASICA1\Escritorio\Practica6\Pr6_Completo.ncd
+OUTFILE=C:\Documents and Settings\BASICA1\Escritorio\Practica6\Pr6_Completo.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Documents and Settings\BASICA1\Escritorio\Practica6
+LICENSE=ISE
+USER_INFO=174254652_1777488239_210549491_927

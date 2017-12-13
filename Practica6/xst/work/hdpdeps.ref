@@ -1,0 +1,34 @@
+V3 19
+FL "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Antirebote.vhd" 2015/01/10.22:41:22 P.28xd
+EN work/ANTIRREBOTES 1421081782 \
+      FL "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Antirebote.vhd" \
+      PB ieee/std_logic_1164 1341906176 PB ieee/std_logic_arith 1341906177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/ANTIRREBOTES/A_ANTIRREBOTES 1421081783 \
+      FL "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Antirebote.vhd" \
+      EN work/ANTIRREBOTES 1421081782
+FL "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Biestable_T.vhd" 2015/01/11.00:37:30 P.28xd
+EN work/Biestable_T 1421081780 \
+      FL "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Biestable_T.vhd" \
+      PB ieee/std_logic_1164 1341906176
+AR work/Biestable_T/Behavioral 1421081781 \
+      FL "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Biestable_T.vhd" \
+      EN work/Biestable_T 1421081780
+FL "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Pr6_Completo.vhd" 2015/01/11.00:56:56 P.28xd
+EN work/Pr6_Completo 1421081786 \
+      FL "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Pr6_Completo.vhd" \
+      PB ieee/std_logic_1164 1341906176
+AR work/Pr6_Completo/Behavioral 1421081787 \
+      FL "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Pr6_Completo.vhd" \
+      EN work/Pr6_Completo 1421081786 CP Antirrebotes CP Practica6
+FL "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Practica6.vhd" 2015/01/11.17:54:20 P.28xd
+EN work/Practica6 1421081784 \
+      FL "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Practica6.vhd" \
+      PB ieee/std_logic_1164 1341906176
+AR work/Practica6/Behavioral 1421081785 \
+      FL "C:/Documents and Settings/BASICA1/Escritorio/Practica6/Practica6.vhd" \
+      EN work/Practica6 1421081784 CP Biestable_T
+FL E:/Practica6/Antirebote.vhd 2015/01/10.22:41:22 P.28xd
+FL E:/Practica6/Biestable_T.vhd 2015/01/11.00:37:30 P.28xd
+FL E:/Practica6/Pr6_Completo.vhd 2015/01/11.00:56:56 P.28xd
+FL E:/Practica6/Practica6.vhd 2015/01/11.17:54:20 P.28xd
