@@ -17,6 +17,25 @@
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
+
+
+--Copyright 2014 Almudena Garcia Jurado-Centurion
+
+--This file is part of Practica5.
+
+--Practica5 is free software: you can redistribute it and/or modify
+--it under the terms of the GNU General Public License as published by
+--the Free Software Foundation, either version 3 of the License, or
+--(at your option) any later version.
+
+--Practica5 is distributed in the hope that it will be useful,
+--but WITHOUT ANY WARRANTY; without even the implied warranty of
+--MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+--GNU General Public License for more details.
+
+--You should have received a copy of the GNU General Public License
+--along with Practica5.  If not, see <http://www.gnu.org/licenses/>.*/
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
